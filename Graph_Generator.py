@@ -13,12 +13,15 @@ def main():
     # Get user statements as input
     user_statements = st.text_area("Enter your statements here:")
     
+    # Get the graph type from the user
+    graph_type = st.selectbox("Select Graph Type", ["bar", "line", "area"])
+    
     # Add a Submit button
     if st.button("Generate Graph"):
         # Process user statements and create data for the graph
         # (Replace this with your data processing logic)
         data_for_graph = {
-            "type": "bar",
+            "type": graph_type,
             "data": {
                 "labels": user_statements.splitlines(),
                 "datasets": [{
@@ -39,4 +42,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
