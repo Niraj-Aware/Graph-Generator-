@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import json  # Add this line to import the json module
 
 def generate_quickchart_url(data):
     # Construct the API URL for quickchart.io
@@ -36,3 +37,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
