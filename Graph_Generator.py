@@ -20,10 +20,10 @@ def main():
         data_for_graph = {
             "type": "bar",
             "data": {
-                "labels": ["Label 1", "Label 2", "Label 3"],
+                "labels": user_statements.splitlines(),
                 "datasets": [{
                     "label": "Data",
-                    "data": [10, 20, 15]
+                    "data": [10, 20, 15]  # Replace this with your data based on user statements
                 }]
             }
         }
@@ -39,3 +39,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
